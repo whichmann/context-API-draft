@@ -1,0 +1,119 @@
+/* .page-header {
+  height: 65vh;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/northernlights.jpg);
+}
+
+.page-header:after {
+  animation: grain 8s steps(10) infinite;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png);
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.3;
+  position: fixed;
+  top: -110%;
+  width: 300%;
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0,0)}
+  10% { transform: translate(-5%,-10%)}
+  20% { transform: translate(-15%,5%)}
+  30% { transform: translate(7%,-25%)}
+  40% { transform: translate(-5%,25%)}
+  50% { transform: translate(-15%,10%)}
+  60% { transform: translate(15%,0%)}
+  70% { transform: translate(0%,15%)}
+  80% { transform: translate(3%,35%)}
+  90% { transform: translate(-10%,10%)}
+} */
+
+#bell { 
+  left:0px;
+	position: relative;
+}
+#bell:before, #bell:after {
+  position: absolute;
+  margin: -85px 85px;
+  content: "";
+	left: 0px; top: 0;
+	width: 4px;
+	height:10px;
+	background: #d3d3d3;
+	border-radius: 15px 15px 15px 2px;
+	-webkit-transform: rotate(15deg);
+	-webkit-transform-origin: 0 0;
+}
+#bell:after { 
+	left: 0; 
+	-webkit-transform: rotate(-15deg); 
+	-webkit-transform-origin:100% 0;
+	border-radius: 15px 15px 2px 15px;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* app styles */
+.App {
+
+  max-width: 400px;
+
+  margin: 30px auto;
+
+  text-align: center;
+
+}
+
+nav{
+
+  padding: 5px;
+
+}
+
+nav ul {
+
+  padding: 0;
+
+}
+
+nav ul li {
+
+  display: inline-block;
+
+  margin: 0 10px;
+
+}
+
+.book-list {
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+
+}
+
+.book-list ul{
+
+  padding: 0;
+
+  list-style-type: none;
+
+}
+
+.book-list li {
+
+  padding: 10px;
+
+  margin: 10px auto;
+
+  border-radius: 10px;
+
+}
