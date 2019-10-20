@@ -3,8 +3,7 @@ import {ThemeContext} from "../Contexts/ThemeContext"
 
 const BookList = ({props}) => {
 
-  const context = useContext(ThemeContext);
-  const {light, dark, isLightTheme} = context
+  const {light, dark, isLightTheme} = useContext(ThemeContext);
   const theme = isLightTheme ? light : dark;
 
   return (
